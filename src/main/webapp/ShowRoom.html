@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Available Rooms | Hotel Platinum Pavilion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #4b0082, #6a5acd);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .home-btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #6a5acd;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background-color 0.3s;
+    }
+
+    .home-btn:hover {
+      background-color: #836fff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .room-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .room-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s ease;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .room-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .room-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .room-details {
+      padding: 15px;
+    }
+
+    .room-details h3 {
+      color: #4b0082;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .room-details p {
+      font-size: 15px;
+      margin: 5px 0;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #4b0082;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Available Rooms</h1>
+    <a href="index.html" class="home-btn">Home</a>
+  </header>
+
+  <div class="container">
+    <div class="room-grid">
+
+      <!-- Room 101 -->
+      <a href="bookRoom.jsp?roomNo=101&type=Deluxe&price=3500" class="room-card">
+        <img src="https://plus.unsplash.com/premium_photo-1663126637580-ff22a73f9bfc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG90ZWwlMjBiZWRyb29tfGVufDB8fDB8fHww" alt="Room 101">
+        <div class="room-details">
+          <h3>Room No: 101</h3>
+          <p>Type: Deluxe Room</p>
+          <p>Rent: ₹3,500 / night</p>
+        </div>
+      </a>
+
+      <!-- Room 102 -->
+      <a href="bookRoom.jsp?roomNo=102&type=Executive%20Suite&price=5500" class="room-card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQMxKKjhit-eIrQIN9iryD8u5eE6AWXmwhZw&s" alt="Room 102">
+        <div class="room-details">
+          <h3>Room No: 102</h3>
+          <p>Type: Executive Suite</p>
+          <p>Rent: ₹5,500 / night</p>
+        </div>
+      </a>
+
+      <!-- Room 103 -->
+      <a href="bookRoom.jsp?roomNo=103&type=Standard&price=2800" class="room-card">
+        <img src="https://images.oyoroomscdn.com/uploads/hotel_image/241897/medium/xpxpldbjffxq.jpg" alt="Room 103">
+        <div class="room-details">
+          <h3>Room No: 103</h3>
+          <p>Type: Standard Room</p>
+          <p>Rent: ₹2,800 / night</p>
+        </div>
+      </a>
+
+      <!-- Room 104 -->
+      <a href="bookRoom.jsp?roomNo=104&type=Family%20Suite&price=6500" class="room-card">
+        <img src="https://www.usatoday.com/gcdn/-mm-/05b227ad5b8ad4e9dcb53af4f31d7fbdb7fa901b/c=0-64-2119-1259/local/-/media/USATODAY/USATODAY/2014/08/13/1407953244000-177513283.jpg?width=1600&height=800&fit=crop&format=pjpg&auto=webp" alt="Room 104">
+        <div class="room-details">
+          <h3>Room No: 104</h3>
+          <p>Type: Family Suite</p>
+          <p>Rent: ₹6,500 / night</p>
+        </div>
+      </a>
+
+      <!-- Room 105 -->
+      <a href="bookRoom.jsp?roomNo=105&type=Honeymoon%20Suite&price=7200" class="room-card">
+        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/607574071.jpg?k=b529f3b53ff7fe31fc34dcfb1d4e55da137487ef0c50d3464f1196fbb62a54b7&o=&hp=1" alt="Room 105">
+        <div class="room-details">
+          <h3>Room No: 105</h3>
+          <p>Type: Honeymoon Suite</p>
+          <p>Rent: ₹7,200 / night</p>
+        </div>
+      </a>
+
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Hotel Platinum Pavilion. All rights reserved.
+  </footer>
+
+</body>
+</html>
